@@ -21,7 +21,7 @@ def train_model(data):
 
 @st.cache_data
 def load_movies():
-    movies = pd.read_csv('ml-25m/movies.csv')
+    movies = pd.read_csv('ml-latest-small/movies.csv')
     movie_titles = dict(zip(movies['movieId'], movies['title']))
     return movie_titles
 
