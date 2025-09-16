@@ -1,6 +1,7 @@
 ### Dataset: [Dataset](https://grouplens.org/datasets/movielens/)
 ### References: [Rounak Banik](https://www.kaggle.com/code/rounakbanik/movie-recommender-systems)
 ## Setup: 
+**Needs python<=3.9 due to surprise library**
 ```
 git clone https://github.com/vegam05/movieRecommenderSystem5
 cd movieRecommenderSystem5
