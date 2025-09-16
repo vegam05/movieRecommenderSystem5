@@ -9,7 +9,30 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 ## Usage:
-Just search for a movie or choose one from the dropdown menu and hit the Recommend button, you'll be provided with 10 movie names based on the data acquired from the dataset that imitates the taste of other users who liked the input movie.
+1. Select a Movie
 
-The system functions upon collaborative filtering and hence it functions based on the idea that- users' ratings similar to me can be used to predict how much I will like a particular product or service, those users have used/experienced but I have not.
-The system is implemented using SVD from the surprise library
+Search for a movie or choose one from the dropdown menu.
+
+2. Choose Recommendation Type
+
+Collaborative Filtering: Suggests movies liked by users with similar tastes.
+
+Content-Based Filtering: Suggests movies with similar genres to the selected movie.
+
+3. Choose Number of Recommendations
+
+Select how many movie recommendations you want to receive.
+
+4. Get Recommendations
+
+Click the Recommend button.
+
+The app will provide the selected number of movie recommendations based on your choice of movie and recommendation type.
+
+5. How It Works (Technical Overview)
+
+Collaborative Filtering: Uses SVD (Singular Value Decomposition) from the surprise library to predict which movies you may like based on other users’ ratings.
+
+Content-Based Filtering: Compares movie genres using cosine similarity to recommend movies with similar content.
+
+The hybrid system allows you to explore both approaches depending on your preference.
